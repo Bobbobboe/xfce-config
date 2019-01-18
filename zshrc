@@ -66,6 +66,7 @@ plugins=(
   git
   extract
   zsh-completions
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -95,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
+source ~/.cargo/env
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -104,7 +105,7 @@ alias ll="ls -al"
 alias cp="cp -vi"
 alias mv="mv -vi"
 alias y="yay -Syyuu"
-alias a="apropos"
+alias a="git add -a"
 alias r="reboot"
 alias s="yay -S"
 alias neofetch="neofetch --ascii ~/Documents/ascii"
@@ -113,4 +114,6 @@ alias p="git pull"
 alias i="idea ."
 alias t="thunar ."
 alias q="git push origin master"
+alias c="git commit -m"
 alias vim="nvim"
+alias watergieter="watch curl m.isw/api/sb/meme/pieterwatergieter > /dev/null 2>&1"
