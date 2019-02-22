@@ -1,5 +1,6 @@
+rofi.modi:	combi
 ! Enabled modi
-rofi.modi:                           window,run,ssh,combi
+rofi.combi-modi:                           window,run,ssh
 ! Window opacity
 rofi.opacity:                        100
 ! Window width
@@ -65,7 +66,7 @@ rofi.parse-known-hosts:              true
 ! Set the modi to combine in combi mode
 rofi.combi-modi:                     window,run
 ! Do a more fuzzy matching
-rofi.fuzzy:                          false
+rofi.fuzzy:                          true
 ! Use glob matching
 rofi.glob:                           false
 ! Use regex matching

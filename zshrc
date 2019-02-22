@@ -3,12 +3,12 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-
+export BROWSER=/usr/bin/firefox
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gentoo"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,7 +97,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.cargo/env
-#
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -105,7 +104,7 @@ alias ll="ls -al"
 alias cp="cp -vi"
 alias mv="mv -vi"
 alias y="yay -Syyuu"
-alias a="git add -a"
+alias a="git add -A"
 alias r="reboot"
 alias s="yay -S"
 alias neofetch="neofetch --ascii ~/Documents/ascii"
@@ -117,3 +116,5 @@ alias q="git push origin master"
 alias c="git commit -m"
 alias vim="nvim"
 alias watergieter="watch curl m.isw/api/sb/meme/pieterwatergieter > /dev/null 2>&1"
+alias msfconsole="msfconsole --quiet -x \"db_connect postgres@msf\""
+

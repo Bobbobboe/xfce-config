@@ -17,6 +17,8 @@ Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'Yggdroot/indentLine'
 Plug 'morhetz/gruvbox'
+Plug 'stephpy/vim-yaml'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
@@ -33,9 +35,6 @@ set nowrap
 
 noremap Y y$
 
-if (has("termguicolors"))
- set termguicolors
-endif
 syntax enable
 colorscheme gruvbox
 set background=dark
